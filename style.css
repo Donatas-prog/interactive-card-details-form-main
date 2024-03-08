@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Space Grotesk", sans-serif;
+}
+.container_main {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+.container_right {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+.background {
+    max-width: 300px;
+    height: 80vh;
+    position: relative;
+}
+.background_image {
+    position: relative;
+    
+}
+.mobile_image {
+    display: none;
+}
+.cards {
+    color: hsl(0, 0%, 100%);
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+.card_top {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    
+}
+.card_bottom {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.card_front {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    
+}
+.card_back {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    min-height: 180px;
+}
+.block-1 {
+    display: flex;
+    flex-direction: column;
+}
+.block-2 {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+}
+label {
+    margin-bottom: .3rem;
+}
+
+.number_parent {
+    display: flex;
+    flex-direction: column;
+}
+.third_row {
+    display: flex;
+}
+
+.cvc_label_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.succes_message {
+    width: 80%;
+}
+.succes_image {
+    background-image: url(images/icon-complete.svg);
+    background-size: auto;
+    background-position: center 0rem;
+    background-repeat: no-repeat;
+    padding: 6rem 0rem 6rem 0rem;
+}
+
+.continue_button {
+    width: 50%;
+    height: 3rem;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.input_month_year {
+    width: 100%;
+}
+.label_month {
+    width: 100%;
+    margin-bottom: .4rem;
+}
+.month {
+    width: 44%;
+}
+.year {
+    width: 44%;
+}
+.cvc_input {
+    width: 100%;
+}
+
+.card_number {
+    position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+.card_name {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+}
+.card_month {
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+}
+.card_year {
+    position: absolute;
+    bottom: 2rem;
+    right: 1.9rem;
+}
+.card_cvc {
+    position: absolute;
+    top: 5.1rem;
+    right: 3rem;
+}
+.card_logo_div {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.card_logo {
+    width: 3rem;
+}
+input {
+    margin-bottom: .5rem;
+    padding: .6rem;
+    border-radius: .4rem;
+    
+}
+input {
+    border-color: transparent; border: 1px solid hsl(270, 3%, 87%);
+}
+input {
+    outline: none;
+}
+input:focus {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right,hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+}
+.submit_button {
+    padding: .7rem;
+    margin-top: 1rem;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border-radius: .4rem;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.done {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.error {
+    border-color: hsl(0, 100%, 66%);
+}
+.success {
+    border-image: linear-gradient(to-right, hsl(249, 99%, 64%) to hsl(278, 94%, 30%)) 1;
+}
+.error_message::after {
+    content: "Can't be blank";
+    color: hsl(0, 100%, 66%);
+}
+.succes_image p {
+    margin: 1rem 0rem 3rem 0rem;
+    color: hsl(279, 6%, 55%);
+    text-align: center;
+}
+.succes_image h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width: 768px) {
+    
+    .container_main {
+        display: flex;
+        flex-direction: column;
+        
+        min-width: 100%;
+        height: 100vh;
+        position: relative;
+        
+    }
+    .form {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .attribution {
+        display: none;
+    }
+    .background_image {
+        display: none;
+        
+    }
+    .mobile_image {
+        display: flex;
+        
+    }
+    .mobile_img {
+        width: 100%;
+        height: 35vh;
+    }
+    .cards {
+        position: relative;
+    }
+    .card_top {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        z-index: 1;
+        
+    }
+    .card_bottom {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+    .succes_image {
+        margin-top: 9rem;
+    }
+    .continue_button {
+        width: 100%;
+    }
+}
+   
+
+
+
